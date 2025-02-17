@@ -13,10 +13,10 @@ const Footer = () => {
                     <div className="locations">
                         <h5>LOCATIONS</h5>
                         <ul>
-                            <li>Accra</li>
-                            <li>Kumasi</li>
-                            <li>Cape Coast</li>
-                            <li>Tamale</li>
+                            <li>DALLAS</li>
+                            <li>HOUSTON</li>
+                            <li>AUSTIN</li>
+                            <li>LUBBOCK</li>
                         </ul>
                     </div>
                     <div className="opening-times">
@@ -30,14 +30,14 @@ const Footer = () => {
                     <div className="contact">
                         <h5>CONTACT US</h5>
                         <ul>
-                            <li>96 Abafom Road, North Ridge - Accra</li>
-                            <li>Tel: 020 7928 0678</li>
+                            <li>Texas Tech University,Lubbock,Texas</li>
+                            <li>Tel: 999 999 9999</li>
                             <li>Email: info@littlelemon.com</li>
                         </ul>
                     </div>
             </div>
             <div className="copyright">
-                <p>© 2023 Little Lemon Ltd. All rights reserved.</p>
+                <p>© 2025 Little Lemon Ltd. All rights reserved.</p>
             </div>
         </div>
         </div>

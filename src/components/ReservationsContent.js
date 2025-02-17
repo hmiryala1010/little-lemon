@@ -38,12 +38,13 @@ function ReservationsContent() {
 
         if (formData.telephone === "") {
             err.telephone = "* Phone number required!" 
-        }else{
-            let phoneRegex = /^(?:(?:\(?(?:00|\+)([1-4]\d\d|[1-9]\d+)\)?)[\-\.\ \\\/]?)?((?:\(?\d{1,}\)?[\-\.\ \\\/]?)+)(?:[\-\.\ \\\/]?(?:#|ext\.?|extension|x)[\-\.\ \\\/]?(\d+))?$/i
-            if(!phoneRegex.test(formData.telephone)) {
-                err.telephone = "Telephone number not valid!"
+        } else {
+            let phoneRegex = /^(?:\+1\s?)?(\(?\d{3}\)?[\-\.\ \\\/]?)\d{3}[\-\.\ \\\/]?\d{4}$/;
+            if (!phoneRegex.test(formData.telephone)) {
+                err.telephone = "Telephone number not valid! Please enter a valid U.S. phone number.";
             }
         }
+        
 
 
         if (formData.guests === "") {
@@ -94,7 +95,7 @@ function ReservationsContent() {
                             <label htmlFor="email">Email</label>
                             <input
                                 type="text"
-                                placeholder="text@email.com"
+                                placeholder="text@ffdemail.com"
                                 name="email"
                                 onChange={onChangeHandler}
                             />
@@ -104,7 +105,7 @@ function ReservationsContent() {
                             <label htmlFor="telephone">Telephone</label>
                             <input
                                 type="tel"
-                                placeholder="+233000000000"
+                                placeholder="+10000000000"
                                 name="telephone"
                                 onChange={onChangeHandler}
                             />
